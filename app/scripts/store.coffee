@@ -1,0 +1,1 @@
+Challah.ApplicationAdapter = DS.FixtureAdapter

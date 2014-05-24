@@ -1,0 +1,9 @@
+<h1>Dinners</h1>
+
+<ul>
+  {{#each model}}
+    <li>{{#link-to 'dinner.index' this}}{{id}}: {{formattedDate date}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{view Challah.DinnersNewView model=newDinner}}

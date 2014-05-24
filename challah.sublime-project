@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/sean/Projects/nfiniteset/challah",
+      "folder_exclude_patterns": [".tmp", ".sass-cache", "dist", "node_modules"]
+		}
+	]
+}
