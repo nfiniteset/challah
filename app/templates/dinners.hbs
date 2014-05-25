@@ -1,8 +1,9 @@
-<h1>Dinners</h1>
-
 <ul>
-  {{#each model}}
-    <li>{{#link-to 'dinner.index' this}}{{formattedDate date}}{{/link-to}}</li>
+  {{#each}}
+    {{#link-to 'dinner.index' this tagName="li"}}
+      <h2>{{formattedDate date}}</h2>
+      <p>{{notes}}</p>
+    {{/link-to}}
   {{/each}}
 </ul>
 

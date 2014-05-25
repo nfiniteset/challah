@@ -1,1 +1,3 @@
-Challah.DinnersController = Ember.ObjectController.extend()
+Challah.DinnersController = Ember.ArrayController.extend
+  sortProperties: ['date']
+  sortAscending: true
