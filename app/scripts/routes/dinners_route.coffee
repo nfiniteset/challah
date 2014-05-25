@@ -5,4 +5,4 @@ Challah.DinnersRoute = Ember.Route.extend
   setupController: (controller, model) ->
     controller.setProperties
       model: model
-      newDinner: { name: 'new dinner', date: new Date}
+      newDinner: {}

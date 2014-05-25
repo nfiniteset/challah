@@ -2,4 +2,6 @@ Challah.DinnersNewController = Ember.ObjectController.extend
   needs: 'dinners'
   actions:
     createNextDinner: ->
-      this.get('controllers.dinners.store').createRecord('dinner', @get('content'))
+      Challah.Dinner.nextAvailableFriday().then (nextFriday) =>
+        @set('date', nextFriday)
+        @get('controllers.dinners.store').createRecord('dinner', @get('content'))
