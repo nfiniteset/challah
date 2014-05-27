@@ -1,0 +1,8 @@
+{{view Challah.GuestsNewView model=newGuest}}
+
+<ul>
+  {{#each}}
+    {{#link-to 'guest' this tagName="li"}}{{name}}{{/link-to}}
+  {{/each}}
+</ul>
+

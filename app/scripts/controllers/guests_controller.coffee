@@ -1,0 +1,1 @@
+Challah.GuestsController = Ember.ArrayController.extend()
